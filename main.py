@@ -6,10 +6,6 @@ app = FastAPI(
     redoc_url="/custom-redoc",  # Custom URL for ReDoc
 )
 
-# app
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
 
 @app.get("/health")
 async def healthcheck():
